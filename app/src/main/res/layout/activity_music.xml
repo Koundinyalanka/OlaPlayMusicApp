@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.venka.musicapp.MusicActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/imagesong"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="author"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:id="@+id/songname"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="artists"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/artistsname"/>
+    <LinearLayout
+        android:id="@+id/timerDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp">
+        <!-- Current Duration Label -->
+        <TextView
+            android:id="@+id/songCurrentDurationLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <!-- Total Duration Label -->
+        <TextView
+            android:id="@+id/songTotalDurationLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/songProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:thumb="@drawable/seek_handler"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backward"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_toLeftOf="@+id/play"
+            android:layout_toStartOf="@+id/play"
+            android:background="@drawable/mybutton"
+            android:src="@drawable/backward" />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/mybutton"
+            />
+
+        <ImageButton
+            android:id="@+id/forward"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:layout_toEndOf="@+id/play"
+            android:layout_toRightOf="@+id/play"
+            android:background="@drawable/mybutton"
+            android:src="@drawable/forward" />
+    </RelativeLayout>
+
+</LinearLayout>

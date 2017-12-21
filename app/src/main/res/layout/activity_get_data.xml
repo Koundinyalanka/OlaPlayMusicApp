@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context=".GetData">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:drawableRight="@drawable/search"
+        android:layout_marginTop="4dp"
+        android:hint="Search"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sample"/>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:divider="#000"
+        android:dividerHeight="1dp"
+        android:cacheColorHint="#00000000"
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none" >
+
+    </ListView>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:text="Prev"
+            android:layout_width="wrap_content"
+            android:src="@drawable/previous"
+            android:background="#ffffff"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/prev"
+            android:layout_toRightOf="@+id/prev"
+            android:layout_toLeftOf="@+id/next"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_toStartOf="@+id/next" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/next" />
+    </RelativeLayout>
+
+</LinearLayout>

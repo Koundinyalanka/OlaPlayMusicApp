@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/customshape"
+    android:padding="5dp">
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/textView2"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2"
+        android:background="#FFFFFF"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="#0099CC" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="#00FFFFFF"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="#0099CC" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/imageview1"
+        android:hint="Address"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageview1"
+        android:id="@+id/line"
+        android:background="#d3d3d3"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/imageview1"
+        android:layout_toRightOf="@+id/imageview1"
+        android:hint="User Name"
+        android:textSize="20dp" />
+</RelativeLayout>
+
+</RelativeLayout>
